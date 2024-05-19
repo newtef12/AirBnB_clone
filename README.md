@@ -26,4 +26,4 @@ shell
 Copy code
 $ python3 -m unittest tests/test_console.py
 Authors
-Newtef12 || newtef398@gmail.com
+Joseph_IZ Akharume | ijeborjoe@gmail.com
