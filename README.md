@@ -1,29 +1,41 @@
-Project Overview
-This project marks the initial phase of developing an AirBnB clone, focusing on the backend while integrating it with a console application utilizing Python's cmd module.
+#  AirBnB clone - The console
 
-Data Management
-The generated Python objects are stored in a JSON file, which can be accessed and manipulated using Python's json module.
+## Project Description
 
-Command Interpreter Overview
-The application interface functions similarly to the Bash shell but supports a limited set of commands specifically designed for the AirBnB website. This command line interpreter acts as the frontend, allowing users to interact with the backend built using Python's object-oriented programming.
+This is the first part of the AirBnB clone project where we worked on the backend of the project whiles interfacing it with a console application with the help of the cmd module in python.
 
-Available Commands and Their Functions
-Command	Description
-EOF or quit	Exit the program
-help	Provides usage instructions for commands
-Command Usage Formats
-Non-Interactive Mode: Commands need to be piped through an echo.
-Interactive Mode: Users type commands directly at the prompt. Commands are executed upon pressing the enter key. The console can be exited using CTRL + D, CTRL + C, quit, or EOF.
-Testing
-Unittests are located in the tests folder. To run all tests, use:
+Data (python objects) generated are stored in a json file and can be accessed with the help of the json module in python
 
-ruby
-Copy code
-$ python3 -m unittest discover tests
-To run a specific test file, use:
+## Description of the command interpreter
 
-shell
-Copy code
-$ python3 -m unittest tests/test_console.py
-Authors
-Joseph_IZ Akharume | ijeborjoe@gmail.com
+The interface of the application is just like the Bash shell except that this has a limited number of accepted commands that were solely defined for the purposes of the usage of the AirBnB website.
+
+This command line interpreter serves as the frontend of the web app where users can interact with the backend which was developed with python OOP programming.
+
+## Available commands and what they do
+
+| Command    |              Description                                                                                             |
+|:----------:|:-------------------------------------------------------------------------------------------------------------------- |
+| EOF or     |  Exit the program                                                                                                    |
+  quit
+| Usage      |  By itself                                                                                                           |
+| Help       |  Provides a  text describing how to use a command                                                                    |     | create     |  Creates a new instance of a valid Class, saves it (to the JSON file) and prints the id.                                                   Valid classes are: BaseModel, User, State, City, Amenity, Place, Review.                                                               |                                                                                                                      |
+
+## Format of Command
+
+In order to give commands to the console, these will need to be piped through an echo in case of Non-interactive mode.
+
+In Interactive Mode the commands will need to be written with a keyboard when the prompt appears and will be recognized when an enter key is pressed (new line). As soon as this happens, the console will attempt to execute the command through several means or will show an error message if the command didn't run successfully. In this mode, the console can be exited using the CTRL + D combination, CTRL + C, or the command quit or EOF.
+
+## Testing
+
+Unittests for the AirBnB project are defined in the tests folder. To run the entire test suite simultaneously, execute the following command:
+
+$ python3 unittest -m discover tests
+Alternatively, you can specify a single test file to run at a time:
+
+$ python3 unittest -m tests/test_console.py
+
+## Authors
+
+Joseph_IZ Akharume || ijeborjoe@gmail.com
